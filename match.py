@@ -12,6 +12,7 @@ soup = BeautifulSoup(r.text,'lxml')
 i = 1
 for item in soup.findAll('item'):
  print(str(i) + '. ' + item.find('description').text)
+ print('------------------------------------------')
  i = i + 1
 
 links = []    
